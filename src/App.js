@@ -35,7 +35,7 @@ export default class App extends React.Component {
 
         this.setState({ authors, books, currentUser: user });
       })
-      .catch(err => console.log(err));
+      .catch(err => console.err(err));
 
     // AUTHOR_SERVICE.getAuthors()
     //   .then(responseFromServer => {
